@@ -1,2 +1,4 @@
 # AVR_Examples
-Atmega128A
+Examples of Atmega128A
+## Target Board
+* HANBACK HBE-MCU-Multi II -ST   
