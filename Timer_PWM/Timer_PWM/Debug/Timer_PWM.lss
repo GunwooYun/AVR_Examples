@@ -1,0 +1,446 @@
+
+Timer_PWM.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  00000246  000002da  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000246  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000004  00800112  00800112  000002ec  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002ec  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000031c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000040  00000000  00000000  0000035c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000ae0  00000000  00000000  0000039c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000881  00000000  00000000  00000e7c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000044f  00000000  00000000  000016fd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000084  00000000  00000000  00001b4c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000466  00000000  00000000  00001bd0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000021a  00000000  00000000  00002036  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000030  00000000  00000000  00002250  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	a7 c0       	rjmp	.+334    	; 0x18c <__vector_15>
+  3e:	00 00       	nop
+  40:	c3 c0       	rjmp	.+390    	; 0x1c8 <__vector_16>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e6 e4       	ldi	r30, 0x46	; 70
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 31       	cpi	r26, 0x12	; 18
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e1       	ldi	r26, 0x12	; 18
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a6 31       	cpi	r26, 0x16	; 22
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	a0 d0       	rcall	.+320    	; 0x204 <main>
+  c4:	be c0       	rjmp	.+380    	; 0x242 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <l_segment>:
+{
+	
+	uint8_t N1000, N100, N10, N1;
+	uint16_t buf;
+	
+	N10 = n / 10; // digit 10
+  c8:	2d ec       	ldi	r18, 0xCD	; 205
+  ca:	82 9f       	mul	r24, r18
+  cc:	21 2d       	mov	r18, r1
+  ce:	11 24       	eor	r1, r1
+  d0:	26 95       	lsr	r18
+  d2:	26 95       	lsr	r18
+  d4:	26 95       	lsr	r18
+	N1 = n % 10; // digit 1
+  d6:	32 2f       	mov	r19, r18
+  d8:	33 0f       	add	r19, r19
+  da:	93 2f       	mov	r25, r19
+  dc:	99 0f       	add	r25, r25
+  de:	99 0f       	add	r25, r25
+  e0:	93 0f       	add	r25, r19
+  e2:	48 2f       	mov	r20, r24
+  e4:	49 1b       	sub	r20, r25
+	
+	for(int i = 0; i < 5; i++){
+  e6:	80 e0       	ldi	r24, 0x00	; 0
+  e8:	90 e0       	ldi	r25, 0x00	; 0
+  ea:	1b c0       	rjmp	.+54     	; 0x122 <l_segment+0x5a>
+		
+		PORTC = 0x0e; // 1011
+  ec:	3e e0       	ldi	r19, 0x0E	; 14
+  ee:	35 bb       	out	0x15, r19	; 21
+		PORTA = font[N10];
+  f0:	e2 2f       	mov	r30, r18
+  f2:	f0 e0       	ldi	r31, 0x00	; 0
+  f4:	e0 50       	subi	r30, 0x00	; 0
+  f6:	ff 4f       	sbci	r31, 0xFF	; 255
+  f8:	30 81       	ld	r19, Z
+  fa:	3b bb       	out	0x1b, r19	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  fc:	e6 e6       	ldi	r30, 0x66	; 102
+  fe:	fe e0       	ldi	r31, 0x0E	; 14
+ 100:	31 97       	sbiw	r30, 0x01	; 1
+ 102:	f1 f7       	brne	.-4      	; 0x100 <l_segment+0x38>
+ 104:	00 00       	nop
+		_delay_ms(1);
+		
+		PORTC = 0x0d; // 0111
+ 106:	3d e0       	ldi	r19, 0x0D	; 13
+ 108:	35 bb       	out	0x15, r19	; 21
+		PORTA = font[N1];
+ 10a:	e4 2f       	mov	r30, r20
+ 10c:	f0 e0       	ldi	r31, 0x00	; 0
+ 10e:	e0 50       	subi	r30, 0x00	; 0
+ 110:	ff 4f       	sbci	r31, 0xFF	; 255
+ 112:	30 81       	ld	r19, Z
+ 114:	3b bb       	out	0x1b, r19	; 27
+ 116:	e6 e6       	ldi	r30, 0x66	; 102
+ 118:	fe e0       	ldi	r31, 0x0E	; 14
+ 11a:	31 97       	sbiw	r30, 0x01	; 1
+ 11c:	f1 f7       	brne	.-4      	; 0x11a <l_segment+0x52>
+ 11e:	00 00       	nop
+	uint16_t buf;
+	
+	N10 = n / 10; // digit 10
+	N1 = n % 10; // digit 1
+	
+	for(int i = 0; i < 5; i++){
+ 120:	01 96       	adiw	r24, 0x01	; 1
+ 122:	85 30       	cpi	r24, 0x05	; 5
+ 124:	91 05       	cpc	r25, r1
+ 126:	14 f3       	brlt	.-60     	; 0xec <l_segment+0x24>
+		
+		PORTC = 0x0d; // 0111
+		PORTA = font[N1];
+		_delay_ms(1);
+	}
+}
+ 128:	08 95       	ret
+
+0000012a <r_segment>:
+{
+	
+	uint8_t N1000, N100, N10, N1;
+	uint16_t buf;
+	
+	N10 = n / 10; // digit 10
+ 12a:	2d ec       	ldi	r18, 0xCD	; 205
+ 12c:	82 9f       	mul	r24, r18
+ 12e:	21 2d       	mov	r18, r1
+ 130:	11 24       	eor	r1, r1
+ 132:	26 95       	lsr	r18
+ 134:	26 95       	lsr	r18
+ 136:	26 95       	lsr	r18
+	N1 = n % 10; // digit 1
+ 138:	32 2f       	mov	r19, r18
+ 13a:	33 0f       	add	r19, r19
+ 13c:	93 2f       	mov	r25, r19
+ 13e:	99 0f       	add	r25, r25
+ 140:	99 0f       	add	r25, r25
+ 142:	93 0f       	add	r25, r19
+ 144:	48 2f       	mov	r20, r24
+ 146:	49 1b       	sub	r20, r25
+	
+	for(int i = 0; i < 5; i++){
+ 148:	80 e0       	ldi	r24, 0x00	; 0
+ 14a:	90 e0       	ldi	r25, 0x00	; 0
+ 14c:	1b c0       	rjmp	.+54     	; 0x184 <r_segment+0x5a>
+		
+		PORTC = 0x0b; // 1011
+ 14e:	3b e0       	ldi	r19, 0x0B	; 11
+ 150:	35 bb       	out	0x15, r19	; 21
+		PORTA = font[N10];
+ 152:	e2 2f       	mov	r30, r18
+ 154:	f0 e0       	ldi	r31, 0x00	; 0
+ 156:	e0 50       	subi	r30, 0x00	; 0
+ 158:	ff 4f       	sbci	r31, 0xFF	; 255
+ 15a:	30 81       	ld	r19, Z
+ 15c:	3b bb       	out	0x1b, r19	; 27
+ 15e:	e6 e6       	ldi	r30, 0x66	; 102
+ 160:	fe e0       	ldi	r31, 0x0E	; 14
+ 162:	31 97       	sbiw	r30, 0x01	; 1
+ 164:	f1 f7       	brne	.-4      	; 0x162 <r_segment+0x38>
+ 166:	00 00       	nop
+		_delay_ms(1);
+		
+		PORTC = 0x07; // 0111
+ 168:	37 e0       	ldi	r19, 0x07	; 7
+ 16a:	35 bb       	out	0x15, r19	; 21
+		PORTA = font[N1];
+ 16c:	e4 2f       	mov	r30, r20
+ 16e:	f0 e0       	ldi	r31, 0x00	; 0
+ 170:	e0 50       	subi	r30, 0x00	; 0
+ 172:	ff 4f       	sbci	r31, 0xFF	; 255
+ 174:	30 81       	ld	r19, Z
+ 176:	3b bb       	out	0x1b, r19	; 27
+ 178:	e6 e6       	ldi	r30, 0x66	; 102
+ 17a:	fe e0       	ldi	r31, 0x0E	; 14
+ 17c:	31 97       	sbiw	r30, 0x01	; 1
+ 17e:	f1 f7       	brne	.-4      	; 0x17c <r_segment+0x52>
+ 180:	00 00       	nop
+	uint16_t buf;
+	
+	N10 = n / 10; // digit 10
+	N1 = n % 10; // digit 1
+	
+	for(int i = 0; i < 5; i++){
+ 182:	01 96       	adiw	r24, 0x01	; 1
+ 184:	85 30       	cpi	r24, 0x05	; 5
+ 186:	91 05       	cpc	r25, r1
+ 188:	14 f3       	brlt	.-60     	; 0x14e <r_segment+0x24>
+		
+		PORTC = 0x07; // 0111
+		PORTA = font[N1];
+		_delay_ms(1);
+	}
+}
+ 18a:	08 95       	ret
+
+0000018c <__vector_15>:
+
+ISR(TIMER0_COMP_vect){
+ 18c:	1f 92       	push	r1
+ 18e:	0f 92       	push	r0
+ 190:	0f b6       	in	r0, 0x3f	; 63
+ 192:	0f 92       	push	r0
+ 194:	11 24       	eor	r1, r1
+ 196:	8f 93       	push	r24
+	l_tcnt++;
+ 198:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <l_tcnt>
+ 19c:	8f 5f       	subi	r24, 0xFF	; 255
+ 19e:	80 93 14 01 	sts	0x0114, r24	; 0x800114 <l_tcnt>
+	if(l_tcnt >= 28){
+ 1a2:	8c 31       	cpi	r24, 0x1C	; 28
+ 1a4:	58 f0       	brcs	.+22     	; 0x1bc <__vector_15+0x30>
+		l_tcnt = 0;
+ 1a6:	10 92 14 01 	sts	0x0114, r1	; 0x800114 <l_tcnt>
+		l_mcnt++;
+ 1aa:	80 91 15 01 	lds	r24, 0x0115	; 0x800115 <l_mcnt>
+ 1ae:	8f 5f       	subi	r24, 0xFF	; 255
+ 1b0:	80 93 15 01 	sts	0x0115, r24	; 0x800115 <l_mcnt>
+		if(l_mcnt > 99) l_mcnt = 0;
+ 1b4:	84 36       	cpi	r24, 0x64	; 100
+ 1b6:	10 f0       	brcs	.+4      	; 0x1bc <__vector_15+0x30>
+ 1b8:	10 92 15 01 	sts	0x0115, r1	; 0x800115 <l_mcnt>
+	}
+}
+ 1bc:	8f 91       	pop	r24
+ 1be:	0f 90       	pop	r0
+ 1c0:	0f be       	out	0x3f, r0	; 63
+ 1c2:	0f 90       	pop	r0
+ 1c4:	1f 90       	pop	r1
+ 1c6:	18 95       	reti
+
+000001c8 <__vector_16>:
+
+ISR(TIMER0_OVF_vect){
+ 1c8:	1f 92       	push	r1
+ 1ca:	0f 92       	push	r0
+ 1cc:	0f b6       	in	r0, 0x3f	; 63
+ 1ce:	0f 92       	push	r0
+ 1d0:	11 24       	eor	r1, r1
+ 1d2:	8f 93       	push	r24
+	r_tcnt++;
+ 1d4:	80 91 13 01 	lds	r24, 0x0113	; 0x800113 <r_tcnt>
+ 1d8:	8f 5f       	subi	r24, 0xFF	; 255
+ 1da:	80 93 13 01 	sts	0x0113, r24	; 0x800113 <r_tcnt>
+	if(r_tcnt >= 56){
+ 1de:	88 33       	cpi	r24, 0x38	; 56
+ 1e0:	58 f0       	brcs	.+22     	; 0x1f8 <__vector_16+0x30>
+		r_tcnt = 0;
+ 1e2:	10 92 13 01 	sts	0x0113, r1	; 0x800113 <r_tcnt>
+		r_mcnt++;
+ 1e6:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+ 1ea:	8f 5f       	subi	r24, 0xFF	; 255
+ 1ec:	80 93 12 01 	sts	0x0112, r24	; 0x800112 <__data_end>
+		if(r_mcnt > 99) r_mcnt = 0;
+ 1f0:	84 36       	cpi	r24, 0x64	; 100
+ 1f2:	10 f0       	brcs	.+4      	; 0x1f8 <__vector_16+0x30>
+ 1f4:	10 92 12 01 	sts	0x0112, r1	; 0x800112 <__data_end>
+	}
+}
+ 1f8:	8f 91       	pop	r24
+ 1fa:	0f 90       	pop	r0
+ 1fc:	0f be       	out	0x3f, r0	; 63
+ 1fe:	0f 90       	pop	r0
+ 200:	1f 90       	pop	r1
+ 202:	18 95       	reti
+
+00000204 <main>:
+		f = 14.7456Mhz / 1024 = 14.4khz == 14400 hz
+		
+		T = 1/14.4khz = 6.9444 * e-5(s) = 0.0694(ms)
+	*/
+	
+	DDRB |= 0x10; // PB4 OC0 set output
+ 204:	87 b3       	in	r24, 0x17	; 23
+ 206:	80 61       	ori	r24, 0x10	; 16
+ 208:	87 bb       	out	0x17, r24	; 23
+	
+	TCCR0 |= (1 << WGM00) | 1<< WGM01; // fast PWM mode
+ 20a:	83 b7       	in	r24, 0x33	; 51
+ 20c:	88 64       	ori	r24, 0x48	; 72
+ 20e:	83 bf       	out	0x33, r24	; 51
+	TCCR0 |= (1 << COM01) | (1 << COM00); // Clear OC0 on match point <-- ARM PWM mode 0
+ 210:	83 b7       	in	r24, 0x33	; 51
+ 212:	80 63       	ori	r24, 0x30	; 48
+ 214:	83 bf       	out	0x33, r24	; 51
+	TCCR0 |= (1 << CS02) | (1 << CS01) | (1 << CS00); // prescaler 1024
+ 216:	83 b7       	in	r24, 0x33	; 51
+ 218:	87 60       	ori	r24, 0x07	; 7
+ 21a:	83 bf       	out	0x33, r24	; 51
+	
+	TIMSK |= (1 << OCIE0) | (1 << TOIE0); // oc2 output toggle
+ 21c:	87 b7       	in	r24, 0x37	; 55
+ 21e:	83 60       	ori	r24, 0x03	; 3
+ 220:	87 bf       	out	0x37, r24	; 55
+	
+	DDRA = 0xff;
+ 222:	9f ef       	ldi	r25, 0xFF	; 255
+ 224:	9a bb       	out	0x1a, r25	; 26
+	DDRC = 0x0f;
+ 226:	8f e0       	ldi	r24, 0x0F	; 15
+ 228:	84 bb       	out	0x14, r24	; 20
+	PORTA = 0xff;
+ 22a:	9b bb       	out	0x1b, r25	; 27
+	PORTC = 0x0f;
+ 22c:	85 bb       	out	0x15, r24	; 21
+	
+	OCR0 = 102;
+ 22e:	86 e6       	ldi	r24, 0x66	; 102
+ 230:	81 bf       	out	0x31, r24	; 49
+	
+	sei();
+ 232:	78 94       	sei
+	//uint8_t level = 0;
+		
+    /* Replace with your application code */
+    while (1) 
+    {
+		r_segment(r_mcnt);
+ 234:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <__data_end>
+ 238:	78 df       	rcall	.-272    	; 0x12a <r_segment>
+		l_segment(l_mcnt);
+ 23a:	80 91 15 01 	lds	r24, 0x0115	; 0x800115 <l_mcnt>
+ 23e:	44 df       	rcall	.-376    	; 0xc8 <l_segment>
+ 240:	f9 cf       	rjmp	.-14     	; 0x234 <main+0x30>
+
+00000242 <_exit>:
+ 242:	f8 94       	cli
+
+00000244 <__stop_program>:
+ 244:	ff cf       	rjmp	.-2      	; 0x244 <__stop_program>
