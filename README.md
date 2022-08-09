@@ -8,5 +8,12 @@ Examples of Atmega128A
 |![block](./pic/block.jpg)|![device](./pic/sized_board.jpg)|
 
 ## Directories
-* toggle_LED :    
-* sevenSegment :      
+* Interrupt :    
+* LED :   
+* Switch :   
+* Timer :   
+* Timer_CTC :   
+* Timer_PWM :    
+* Uart :   
+* sevenSegment :   
+* toggle_LED :          
