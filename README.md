@@ -15,9 +15,8 @@ Examples of Atmega128A
   - toggle_LED : Delay 함수를 이용해 LED ON / OFF
   - sevenSegment : 7-segment 출력
   - switch : 버튼을 누르면 LED 출력
-- Timer (prescaler : 1024 / f = 14.7456Mhz / 1024 = 14.4khz / T = 1/14.4khz == 0.0694ms)
-  - Timer :
-  - Timer_CTC :
-  - Tiemr_PWM :
+- Timer (prescaler : 1024)
+  - Timer_CTC : CTC 모드를 이용해 1초 주기로 7-segment 출력
+  - Tiemr_PWM : PWM 모드로 7-sgement 숫자 출력
 - Communication
-  - Uart :  
+  - Uart : UART 통신 메시지 echo 기능
