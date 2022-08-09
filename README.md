@@ -1,10 +1,11 @@
 # AVR_Examples
 ### Examples of AVR Atmega128
-
+ATmega128 MCU를 기반으로 LED와 7-segment, 버튼등의 입출력 장치와 타이머 기능을 활용한 실습 예제를 작성
 &nbsp;
 
 ## Target Board
 ### HANBACK HBE-MCU-Multi II -ST   
+##
 |diagram|board|
 |:---:|:---:|
 |![block](./pic/block.jpg)|![device](./pic/sized_board.jpg)|
