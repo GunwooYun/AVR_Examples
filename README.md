@@ -6,7 +6,7 @@ Examples of Atmega128A
 * block diagram   
 ![block](./pic/block.jpg)   
 * device   
-![device](./pic/target_board.jpg)
+![device](./pic/sized_board.jpg)
 ## Directories
 * toggle_LED :    
 * sevenSegment :      
