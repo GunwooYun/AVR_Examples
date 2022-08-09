@@ -5,7 +5,12 @@ ATmega128 MCU를 기반으로 LED와 7-segment, 버튼등의 입출력 장치와
 
 ## Target Board
 ### HANBACK HBE-MCU-Multi II -ST   
-##
+* MCU : ATmega128A   
+* Memory : EEPROM 2MB / SRAM 128KB   
+* Communication : UART 1EA, Bluetooth module   
+* Devices : FND, LED, buttons, etc
+* link : [스펙링크주소](https://hanback.com/ko/archives/7945)   
+
 |diagram|board|
 |:---:|:---:|
 |![block](./pic/block.jpg)|![device](./pic/sized_board.jpg)|
